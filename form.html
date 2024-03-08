@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN' crossorigin='anonymous'><script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL' crossorigin='anonymous'></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="bg-dark">
+        <div class="p-2 container-fluid d-flex flex-row justify-content-between align-items-center">
+          <div>
+            <img src="assets/img/logo.webp" width="100px">
+          </div>
+          <div>
+            <a class="text-white" href="index.html">Home</a>
+          </div>
+        </div>
+      </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                        <h1>Add Product</h1>
+                        <hr />
+                        <form id="productForm" class="d-flex flex-column justify-content-evenly">
+                            <label for="nameProduct">Nome</label>
+                            <input id="nameProduct" name="nameProduct" type="text" placeholder="Nome Prodotto" required>
+                            <label for="brand">Brand</label>
+                            <input id="brand" name="brand" type="text" placeholder="Modello" required>
+                            <label for="price">Prezzo</label>
+                            <input type="number" name="price" id="price" placeholder="0$" required>
+                            <label for="urlImg">URL Immagine</label>
+                            <input type="text" name="urlImg" id="urlImg" placeholder="https://placehold.it/300x420" required>
+                            <label for="descProduct">Descrizione Prodotto</label>
+                            <textarea name="descProduct" id="descProduct" cols="30" rows="10" required></textarea>
+                            
+                        </form>
+                  
+                </div>
+                <div class="col-3">
+                    <button id="deleteBtn" class="w-100 d-none">delete</button>
+                </div>
+                <div class="col-3">
+                   
+                </div>
+                <div class="col-3">
+                    <button id="resetBtn" class="w-100 bg-white border-1 p-1 mt-2 rounded-2">Reset</button>
+                </div>
+                <div class="col-3">
+                    <button id="saveBtn" type="submit" class="w-100 bg-warning border-0 p-1 mt-2 rounded-2">Save</button>
+                </div>
+            </div>
+        </div>
+     
+    </main>
+    
+       
+     
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
