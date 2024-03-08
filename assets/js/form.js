@@ -202,7 +202,18 @@ const init = () =>{
 
     resetBtn.addEventListener('click', function(e){
         e.preventDefault();
-        productForm.reset();
+        
+        if (confirm('Are you sure?') == true ){
+            productForm.reset();
+            for ( let i = 0; i< productForm.elements.length; i++){
+        
+           
+               
+                    productForm.elements[i].classList.remove('empty')
+               
+            
+        }
+           }
     })
     
 }
