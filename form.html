@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                        <h1>Add Product</h1>
+                        <h2 class="mt-4" id="title">Add Product</h2>
                         <hr />
                         <form id="productForm" class="d-flex flex-column justify-content-evenly">
                             <label for="nameProduct">Nome</label>
@@ -31,7 +31,7 @@
                             <label for="brand">Brand</label>
                             <input id="brand" name="brand" type="text" placeholder="Modello" required>
                             <label for="price">Prezzo</label>
-                            <input type="number" name="price" id="price" placeholder="0$" required>
+                            <input type="number" name="price" id="price" placeholder="0€" required>
                             <label for="urlImg">URL Immagine</label>
                             <input type="text" name="urlImg" id="urlImg" placeholder="https://placehold.it/300x420" required>
                             <label for="descProduct">Descrizione Prodotto</label>
@@ -41,7 +41,7 @@
                   
                 </div>
                 <div class="col-3">
-                    <button id="deleteBtn" class="w-100 d-none">delete</button>
+                    <button id="deleteBtn" class="w-100 bg-danger text-white border-1 p-1 mt-2 rounded-2 d-none">delete</button>
                 </div>
                 <div class="col-3">
                    
@@ -53,7 +53,9 @@
                     <button id="saveBtn" type="submit" class="w-100 bg-warning border-0 p-1 mt-2 rounded-2">Save</button>
                 </div>
             </div>
+            <p id="message"></p>
         </div>
+        
      
     </main>
     

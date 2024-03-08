@@ -19,7 +19,6 @@ async function caricaProdotti () {
             }
     })
     let data = await response.json();
-    console.log(data);
     spinner.classList.add('d-none');
     createCards(data);
     
@@ -45,7 +44,7 @@ const createCards = (data) => {
                 </p>
                 </div>
                 <div class="card-footer d-flex flex-column align-items-start">
-                    <button type="button" class="btn btn-warning" onclick="edit(id-${item._id});">Modifica</button>
+                    <button type="button" class="btn btn-warning" onclick="window.location.href = 'form.html?id=${item._id}'">Modifica</button>
                     <button type="button" class="btn btn-info mt-2" onclick="window.location.href = 'detail.html?id=${item._id}'">Scopri di più</button>
                 </div>
                 </div>

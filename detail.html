@@ -15,22 +15,35 @@
           <img src="assets/img/logo.webp" width="100px">
         </div>
         <div>
-          <a class="text-white" href="form.html">Back</a>
+          <a class="text-white" href="form.html">Back office</a>
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
-        <div id="spinner" class="mt-4 d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>
-        </div>
         <div class="container">
-          <div id="productContainer" class="row">
-           
-          </div>
+            <div id="spinner" class="vh-100 d-flex justify-content-center align-items-center">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            </div>
+      <div class="container pt-4">
+        <div class="row">
+            <div class="col-12 d-flex flex-row justify-content-between align-items-center">
+                <h2>Details</h2>
+                <a href="index.html">Go back</a>
+            </div>
+            <hr>
+            <div class="col-6">
+                <img id="imgDetail"  class="w-100">
+            </div>
+            <div class="col-6 d-flex flex-column align-items-start">
+                <p id="brandDetail"></p>
+                <h4 id="nameProductDetail"></h4>
+                <p id="priceDetail" class="bg-dark rounded-2 text-warning p-1"></p>
+                <p id="descriptionDetail"></p>
+            </div>
+        </div>
         </div>
      
     </main>
